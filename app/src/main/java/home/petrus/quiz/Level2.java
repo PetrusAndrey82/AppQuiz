@@ -2,6 +2,7 @@ package home.petrus.quiz;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -37,7 +38,7 @@ public class Level2 extends AppCompatActivity {
 
         //Создаем переменную text_levels
         TextView text_levels = findViewById(R.id.text_levels);
-        text_levels.setText(R.string.level1); //Установили текст
+        text_levels.setText(R.string.level2); //Установили текст
 
         final ImageView img_left = (ImageView)findViewById(R.id.img_left);
         // код который скругляет углы левой картинки
@@ -147,7 +148,7 @@ public class Level2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Level2.this, Level2.class);
+                    Intent intent = new Intent(Level2.this, Level3.class);
                     startActivity(intent);
                     finish();
                 }catch (Exception e) {
@@ -266,6 +267,15 @@ public class Level2 extends AppCompatActivity {
                     //Если отпустил палец - конец
                     if (count == 20) {
                         //ВЫХОД ИЗ УРОВНЯ
+                        SharedPreferences save = getSharedPreferences("Save", MODE_PRIVATE);
+                        final int level = save.getInt("Level", 1);
+                        if (level>2){
+                            //пусто
+                        }else{
+                            SharedPreferences.Editor editor = save.edit();
+                            editor.putInt("Level", 3);
+                            editor.commit();
+                        }
                         dialogEnd.show();
                     }else{
                         numLeft = random.nextInt(10); //Генерируем случайное число от 0 до 9
@@ -353,6 +363,15 @@ public class Level2 extends AppCompatActivity {
                     //Если отпустил палец - конец
                     if (count == 20) {
                         //ВЫХОД ИЗ УРОВНЯ
+                        SharedPreferences save = getSharedPreferences("Save", MODE_PRIVATE);
+                        final int level = save.getInt("Level", 1);
+                        if (level>2){
+                            //пусто
+                        }else{
+                            SharedPreferences.Editor editor = save.edit();
+                            editor.putInt("Level", 3);
+                            editor.commit();
+                        }
                         dialogEnd.show();
                     }else{
                         numLeft = random.nextInt(10); //Генерируем случайное число от 0 до 9

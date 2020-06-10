@@ -58,6 +58,107 @@ public class Array {
     };
     //Массив для 2 уровня - конец
 
+    //Массив для 3 уровня - начало
+    final int[] images3 = {
+            R.drawable.three_level1,
+            R.drawable.three_level2,
+            R.drawable.three_level3,
+            R.drawable.three_level4,
+            R.drawable.three_level5,
+            R.drawable.three_level6,
+            R.drawable.three_level7,
+            R.drawable.three_level8,
+            R.drawable.three_level9,
+            R.drawable.three_level10,
+            R.drawable.three_level11,
+            R.drawable.three_level12,
+            R.drawable.three_level13,
+            R.drawable.three_level14,
+            R.drawable.three_level15,
+            R.drawable.three_level16,
+            R.drawable.three_level17,
+            R.drawable.three_level18,
+            R.drawable.three_level19,
+            R.drawable.three_level20,
+            R.drawable.three_level21,
+    };
+
+    final int[] texts3 = {
+            R.string.lvl3text1,
+            R.string.lvl3text2,
+            R.string.lvl3text3,
+            R.string.lvl3text4,
+            R.string.lvl3text5,
+            R.string.lvl3text6,
+            R.string.lvl3text7,
+            R.string.lvl3text8,
+            R.string.lvl3text9,
+            R.string.lvl3text10,
+            R.string.lvl3text11,
+            R.string.lvl3text12,
+            R.string.lvl3text13,
+            R.string.lvl3text14,
+            R.string.lvl3text15,
+            R.string.lvl3text16,
+            R.string.lvl3text17,
+            R.string.lvl3text18,
+            R.string.lvl3text19,
+            R.string.lvl3text20,
+            R.string.lvl3text21,
+    };
+    //Массив для 3 уровня - конец
+
+    //Массив для 4 уровня - начало
+    final int[] images4 = {
+            R.drawable.edible1,
+            R.drawable.inedible1,
+            R.drawable.edible2,
+            R.drawable.inedible2,
+            R.drawable.edible3,
+            R.drawable.inedible3,
+            R.drawable.edible4,
+            R.drawable.inedible4,
+            R.drawable.edible5,
+            R.drawable.inedible5,
+            R.drawable.edible6,
+            R.drawable.inedible6,
+            R.drawable.edible7,
+            R.drawable.inedible7,
+            R.drawable.edible8,
+            R.drawable.inedible8,
+            R.drawable.edible9,
+            R.drawable.inedible9,
+            R.drawable.edible10,
+            R.drawable.inedible10,
+    };
+
+    final int[] texts4 = {
+            R.string.lvl4texts1,
+            R.string.lvl4texts2,
+            R.string.lvl4texts3,
+            R.string.lvl4texts4,
+            R.string.lvl4texts5,
+            R.string.lvl4texts6,
+            R.string.lvl4texts7,
+            R.string.lvl4texts8,
+            R.string.lvl4texts9,
+            R.string.lvl4texts10,
+            R.string.lvl4texts11,
+            R.string.lvl4texts12,
+            R.string.lvl4texts13,
+            R.string.lvl4texts14,
+            R.string.lvl4texts15,
+            R.string.lvl4texts16,
+            R.string.lvl4texts17,
+            R.string.lvl4texts18,
+            R.string.lvl4texts19,
+            R.string.lvl4texts20,
+    };
+
+    final int[] strong = {
+            1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,
+    };
+    //Массив для 4 уровня - конец
 }
 
 
